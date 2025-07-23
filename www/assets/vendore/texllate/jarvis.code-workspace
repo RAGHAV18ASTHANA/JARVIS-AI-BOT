@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "jarvis",
+			"path": "."
+		},
+		{
+			"name": "texllate-20250720T163730Z-1-001",
+			"path": "../Downloads/texllate-20250720T163730Z-1-001"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "jarvis"
+	}
+}
