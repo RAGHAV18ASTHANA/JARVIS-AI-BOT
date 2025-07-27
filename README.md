@@ -3,3 +3,5 @@ FOR RUNNING THIS BOT YOU HAVE TO CREATE A VIRTUAL ENVIRONMENT IN VS CODE
 THEN YOU HAVE TO INSTALL FOLLOWING LIBRARIES IN TERMINAL USING FOLLOWING
 #pip install playsound==1.2.2
 #pip install Eel
+#pip install pywhatkit
+#pip install pvporcupine==1.9.5
