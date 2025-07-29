@@ -1,6 +1,6 @@
 
 import multiprocessing
-import subprocess
+
 
 # To run Jarvis
 def startJarvis():
@@ -12,6 +12,7 @@ def startJarvis():
 # To run hotword
 def listenHotword():
         # Code for process 2
+        
         print("Process 2 is running.")
         from engine.features import hotword
         hotword()
