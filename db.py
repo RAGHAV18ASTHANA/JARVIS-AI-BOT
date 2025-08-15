@@ -8,9 +8,9 @@ cursor=conn.cursor()
 # query = "CREATE TABLE IF NOT EXISTS sys_command(id integer primary key, name VARCHAR(100), path VARCHAR(1000))"
 # cursor.execute(query)
 
-# query = "INSERT INTO sys_command VALUES (null,'whatsapp', '')"
-# cursor.execute(query)
-# conn.commit()
+query = "INSERT INTO sys_command VALUES (null,'canva', 'C:\\Users\\Raghav\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Canva.lnk')"
+cursor.execute(query)
+conn.commit()
 
 # query = "CREATE TABLE IF NOT EXISTS web_command(id integer primary key, name VARCHAR(100), url VARCHAR(1000))"
 # cursor.execute(query)
@@ -25,7 +25,7 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS contacts (id integer primary key, n
 
 # Specify the column indices you want to import (0-based index)
 # Example: Importing the 1st and 3rd columns
-desired_columns_indices = [0, 20]#  # Adjust these indices based on your CSV structure
+# desired_columns_indices = [0, 20]#  # Adjust these indices based on your CSV structure
 
 
 # # Read data from CSV and insert into SQLite table for the desired columns
@@ -46,3 +46,7 @@ desired_columns_indices = [0, 20]#  # Adjust these indices based on your CSV str
 # cursor.execute("SELECT mobile_no FROM contacts WHERE LOWER(name) LIKE ? OR LOWER(name) LIKE ?", ('%' + query + '%', query + '%'))
 # results = cursor.fetchall()
 # print(results[0][0])
+
+cursor.execute("DELETE FROM contacts WHERE NAME = 'Mummy'")
+conn.commit()
+conn.close()
